@@ -4,14 +4,14 @@
 zh-CN:
   spree:
     themes: '主题'
-    vinsol_spree_themes: 'Vinsol Spree 主题'
+    vinsol_spree_themes: '主题管理'
     templates: '模板'
     path: '路径'
     format: Format
     handler: Handler
     body: Body
     name: '名称'
-    state: '主题状态'
+    theme_state: '主题状态'
     theme_states:
       compiled: '已编译'
       drafted: '草图'

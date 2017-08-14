@@ -11,7 +11,7 @@ en:
     handler: Handler
     body: Body
     name: Name
-    state: Theme State
+    theme_state: Theme State
     theme_states:
       compiled: Compiled
       drafted: Drafted
