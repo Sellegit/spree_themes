@@ -1,0 +1,52 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+zh-CN:
+  spree:
+    themes: '主题'
+    vinsol_spree_themes: 'Vinsol Spree 主题'
+    templates: '模板'
+    path: '路径'
+    format: Format
+    handler: Handler
+    body: Body
+    name: '名称'
+    state: '主题状态'
+    theme_states:
+      compiled: '已编译'
+      drafted: '草图'
+      published: '已发布'
+
+    actions:
+      themes: Themes
+      upload: '上传'
+      compiled: '编译'
+      published: '发布'
+      view_templates: '主题'
+      new_template: '新建模板'
+      download: '下载'
+      preview: '预览'
+
+    models:
+      theme:
+        minimum_active_error: '至少有一个主题应该被发布。'
+        no_destory_error: '已发布的主题不能被删除。'
+
+    flash:
+      admin:
+        themes:
+          upload:
+            success: "主题 %{name} 上传成功。"
+            failure: "出错了, 主题上传失败。"
+          state_change:
+            success: "主题 %{name} 变为 %{state} 状态。"
+            failure: "出错了, 主题 %{name} 由于以下原因不能切换为 %{state} 状态:- %{errors}"
+          destroy:
+            success: "Theme %{name} successfully removed."
+            failure: "出错了, 主题 %{name} 由于以下原因不能删除:- %{errors}"
+          download:
+            failure: "出错了, 主题 %{name} 由于以下原因不能下载:- %{errors}"
+
+    warnings:
+      update_metainfo: '一旦主题更新，你要确保在meta_info.yml中更新主题的元信息。 你需要下载该主题并且重新上传。'
+      preview_mode_message: '预览模式'

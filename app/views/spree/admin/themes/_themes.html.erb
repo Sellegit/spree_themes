@@ -23,7 +23,7 @@
                 <% end %>
                 
                 <% unless theme.published? %>
-                  <%= link_to 'Delete', admin_theme_path(theme), method: :delete, class: 'dropdown-item', data: { confirm: 'Are you sure?' } %>
+                  <%= link_to Spree.t(:delete), admin_theme_path(theme), method: :delete, class: 'dropdown-item', data: { confirm: 'Are you sure?' } %>
                 <% end %>
 
                 <%= link_to Spree.t('actions.download'), download_admin_theme_path(theme), method: :patch, class: 'dropdown-item action-download' %>

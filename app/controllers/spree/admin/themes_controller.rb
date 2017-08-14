@@ -27,10 +27,10 @@ module Spree
                 else false
                 end
         if state
-          flash[:notice] = Spree.t('flash.admin.themes.state_change.success', state: params[:state], name: @theme.name)
+          flash[:notice] = Spree.t('flash.admin.themes.state_change.success', state: Spree.t("theme_states.#{params[:state]}"), name: @theme.name)
           redirect_to admin_themes_path
         else
-          flash[:error] = Spree.t('flash.admin.themes.state_change.failure', state: params[:state], name: @theme.name, errors: @theme.errors.full_messages.join(', '))
+          flash[:error] = Spree.t('flash.admin.themes.state_change.failure', state: Spree.t("theme_states.#{params[:state]}"), name: @theme.name, errors: @theme.errors.full_messages.join(', '))
           render :index
         end
       end
